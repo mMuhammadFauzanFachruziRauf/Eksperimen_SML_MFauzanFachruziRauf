@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*build*/
+*develop-eggs*/
+*dist*/
+*downloads*/
+*eggs*/
+*.eggs/
+*lib*/
+*lib64*/
+*parts*/
+*sdist*/
+*var*/
+*wheels*/
+*share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment
+.env
+.venv
+env/
+venv/
+ENV/
+VENV/
+*/site-packages/*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Dataset besar atau file output yang tidak ingin selalu di-commit
+# Jika Anda ingin workflow Actions yang men-generate dan menyimpan artefak,
+# mungkin Anda tidak perlu menyimpan hasil .csv dari lokal ke repo utama.
+# Tapi untuk Kriteria 1, ada baiknya hasil automate.py (yang csv) itu dicommit dulu
+# agar terlihat hasil kerjanya.
+# Jika file 'bitcoin_idr_daily_processed.csv' di folder 'namadataset_preprocessing'
+# akan selalu di-generate oleh GitHub Actions, Anda bisa mempertimbangkan untuk
+# menambahkannya di sini di masa depan, tapi untuk sekarang, biarkan ia ter-commit.
+# namadataset_raw/*.csv # Contoh jika Anda tidak ingin data mentah di-commit
+
+# OS-specific files
+.DS_Store
+Thumbs.db
